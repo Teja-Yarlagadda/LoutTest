@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://tjdevexperience1-developer-edition.na213.force.com/loutexperiencetestvforcesite/lightning/lightning.out.js"></script>
+<script>
+$Lightning.use("c:louttest",
+        function() {
+            $Lightning.createComponent(
+                "c:form1Test",
+                { },
+                "testImpl",
+                function(cmp) {
+                    console.log('Test');
+                }
+            );
+        },'https://tjdevexperience1-developer-edition.na213.force.com/loutexperiencetest'
+    );
+</script>
+</head>
+<body>
+<div id="testImpl"></div>
+</body>
+</html>
